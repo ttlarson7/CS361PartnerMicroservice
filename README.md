@@ -18,6 +18,26 @@ example = {
         "TimeFrame": "sixMonths"
     };
 
+Here is an example call to the microservice:
+
+async function runPythonScript() {
+    const example = {
+        "Name": "John Doe",
+        "TransactionType": "expenses",
+        "TimeFrame": "sixMonths"
+    };
+
+    try {
+        const pythonResponse = await axios.post('http://localhost:5000/process', example);
+        console.log("Response from Python script:");
+        console.log(pythonResponse.data);
+        
+    } catch (error) {
+        console.error("Error sending request to Python script:", error.message);
+       
+    }
+}
+
 **Step 3**
 The microservice will automatically handle retrieving the data.
 
@@ -31,6 +51,11 @@ The response will have the structure of this:
   TimeFrame: 'sixMonths',
   TransactionType: 'expenses'
 }
+
+To handle the reponse, you can assign it to a variable like so:
+const pythonResponse = await axios.post('http://localhost:5000/process', example);
+
+This will let you handle the the response data.
 
 **Step 5**
 Be happy that you have successfully accessed your microservice!
