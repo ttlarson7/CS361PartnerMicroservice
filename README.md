@@ -55,6 +55,7 @@ The response will have the structure of this:
 To handle the reponse, you can assign it to a variable like so:
 const pythonResponse = await axios.post('http://localhost:5000/process', example);
 
+
 This will let you handle the the response data.
 
 **Step 5**
