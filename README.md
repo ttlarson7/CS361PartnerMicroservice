@@ -67,3 +67,9 @@ This will let you handle the the response data.
 ##Step 5
 
 Be happy that you have successfully accessed your microservice!
+
+
+UML:
+
+![image](https://github.com/ttlarson7/CS361PartnerMicroservice/assets/127142580/bb326be2-b1fd-473d-8968-ab601550218b)
+
