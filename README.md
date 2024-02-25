@@ -20,7 +20,7 @@ example = {
 
 Here is an example call to the microservice:
 
-async function runPythonScript() {
+"""async function runPythonScript() {
     const example = {
         "Name": "John Doe",
         "TransactionType": "expenses",
@@ -36,7 +36,7 @@ async function runPythonScript() {
         console.error("Error sending request to Python script:", error.message);
        
     }
-}
+}"""
 
 **Step 3**
 The microservice will automatically handle retrieving the data.
@@ -53,7 +53,8 @@ The response will have the structure of this:
 }
 
 To handle the reponse, you can assign it to a variable like so:
-const pythonResponse = await axios.post('http://localhost:5000/process', example);
+
+"""const pythonResponse = await axios.post('http://localhost:5000/process', example);"""
 
 
 This will let you handle the the response data.
