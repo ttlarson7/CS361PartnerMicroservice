@@ -1,0 +1,24 @@
+{
+    "John Doe": {
+        "expenses": {
+            "sixMonths":0,
+            "oneMonth":0,
+            "oneWeek":0
+        }, 
+        "income": {
+            "sixMonths":0,
+            "oneMonth":0,
+            "oneWeek":0
+        },
+        "payments": {
+            "sixMonths":0,
+            "oneMonth":0,
+            "oneWeek":0
+        },
+        "subscriptions": {
+            "sixMonths":0,
+            "oneMonth":0,
+            "oneWeek":0
+        } 
+    }
+}
